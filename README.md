@@ -26,8 +26,11 @@ A comprehensive Streamlit-based educational tutor application powered by Google'
 1. **Clone or download the project files**
 
    ```bash
-   cd c:\Faaris\projects\AI-llm\tutor
+   git clone <repository-url>
+   cd ai-educational-tutor
    ```
+   
+   Or download and extract the ZIP file, then navigate to the project directory.
 
 2. **Install required packages**
 
@@ -38,8 +41,15 @@ A comprehensive Streamlit-based educational tutor application powered by Google'
 3. **Set up your API key**
 
    - Get your Gemini API key from [Google AI Studio](https://makersuite.google.com/app/apikey)
-   - Open the `.env` file
-   - Replace `your_gemini_api_key_here` with your actual API key:
+   - Copy the sample environment file:
+     ```bash
+     copy .env.sample .env
+     ```
+     Or on Linux/Mac:
+     ```bash
+     cp .env.sample .env
+     ```
+   - Open the `.env` file and replace `your_gemini_api_key_here` with your actual API key:
      ```
      GOOGLE_API_KEY=your_actual_api_key_here
      ```
