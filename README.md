@@ -81,6 +81,39 @@ Create your own subjects with personalized topics and context
 
 ### Installation
 
+#### Option 1: Easy Setup with Batch File (Windows)
+
+For Windows users, the easiest way to get started:
+
+1. **Download the project files**
+   
+   Download and extract the ZIP file, then navigate to the project directory.
+
+2. **Get your API key**
+   
+   - Get your Gemini API key from [Google AI Studio](https://makersuite.google.com/app/apikey)
+   - Copy the sample environment file:
+     ```cmd
+     copy .env.sample .env
+     ```
+   - Open the `.env` file and replace `your_gemini_api_key_here` with your actual API key
+
+3. **Run the application**
+   
+   Simply double-click `run.bat` or run it from command prompt:
+   ```cmd
+   run.bat
+   ```
+   
+   The batch file will automatically:
+   - Check if Python is installed
+   - Create a virtual environment
+   - Install all required packages
+   - Validate your API key setup
+   - Start the Streamlit application
+
+#### Option 2: Manual Installation
+
 1. **Clone or download the project files**
 
    ```bash
