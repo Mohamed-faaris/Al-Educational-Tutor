@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 import os
 from typing import List, Dict, Any
 import time
-from config import SUBJECTS, APP_CONFIG, API_CONFIG, UI_MESSAGES, SYSTEM_PROMPT_TEMPLATE, SUBJECT_ICONS
+from config import SUBJECTS, APP_CONFIG, API_CONFIG, UI_MESSAGES, SYSTEM_PROMPT_TEMPLATE
 from utils import (
     format_timestamp, truncate_text, export_chat_history, 
     validate_question, display_chat_statistics, safe_get_subject_info
@@ -251,10 +251,12 @@ def main():
                 height=90
             )
             
-            custom_icon = st.selectbox(
+            custom_icon = st.text_input(
                 "Choose an icon:",
-                options=SUBJECT_ICONS,
-                help="Select an emoji to represent your subject"
+                value="📚",
+                max_chars=2,
+                placeholder="📚",
+                help="Enter any emoji to represent your subject (e.g., 🎨, 🔬, 🎵, 💡)"
             )
             
             col_add, col_info = st.columns([1, 2])

@@ -215,6 +215,52 @@ plt.show()"""
 </body>
 </html>"""
         }
+    },
+    "Database Management Systems (DBMS)": {
+        "description": "Learn database design, SQL, and database management concepts",
+        "context": "Database management systems including relational databases, SQL queries, database design, normalization, indexing, transactions, and NoSQL databases",
+        "icon": "🗄️",
+        "example_questions": [
+            "What is the difference between SQL and NoSQL databases?",
+            "How do I normalize a database?",
+            "What are ACID properties in databases?",
+            "How do I write efficient SQL queries?",
+            "What is the difference between INNER JOIN and LEFT JOIN?"
+        ],
+        "study_tips": [
+            "Practice writing SQL queries on real datasets",
+            "Understand database design principles before writing code",
+            "Learn to read and understand execution plans",
+            "Practice with different database systems (MySQL, PostgreSQL, MongoDB)",
+            "Focus on understanding relationships between tables"
+        ],
+        "quick_reference": {
+            "type": "code",
+            "language": "sql",
+            "content": """-- SQL Basics
+SELECT column1, column2 FROM table_name;
+
+-- Filtering data
+SELECT * FROM users WHERE age > 18;
+
+-- Joining tables
+SELECT u.name, o.product 
+FROM users u 
+INNER JOIN orders o ON u.id = o.user_id;
+
+-- Grouping and aggregation
+SELECT department, COUNT(*) as emp_count
+FROM employees 
+GROUP BY department;
+
+-- Creating tables
+CREATE TABLE students (
+    id INT PRIMARY KEY,
+    name VARCHAR(100),
+    email VARCHAR(100) UNIQUE,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);"""
+        }
     }
 }
 
@@ -275,10 +321,3 @@ Special instructions for custom subjects:
 - Draw connections to more established fields when helpful
 - Be creative in finding analogies and examples for unique topics
 """
-
-# Default icons for quick selection
-SUBJECT_ICONS = [
-    "📚", "🎨", "🔬", "🎵", "🏛️", "⚖️", "🌱", "🍳", 
-    "🏃", "💼", "🎭", "🔧", "🎯", "🌟", "🔮", "🎪",
-    "🏺", "🎲", "📸", "🌍", "🚀", "💡", "🎬", "📊"
-]

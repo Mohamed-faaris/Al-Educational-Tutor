@@ -78,9 +78,9 @@ def get_custom_css():
         border: 1px solid #e0e0e0;
     }
     
-    /* Button styling - WhatsApp theme */
+    /* Button styling - Modern blue theme */
     .stButton > button {
-        background: #25D366;
+        background: #007bff;
         color: white;
         border: none;
         border-radius: 25px;
@@ -90,14 +90,15 @@ def get_custom_css():
     }
     
     .stButton > button:hover {
-        background: #128C7E;
+        background: #0056b3;
+        color: #f8f9fa;
         transform: translateY(-2px);
         box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     }
     
     /* Send button specific styling */
     .stButton button[kind="primary"] {
-        background: #25D366;
+        background: #007bff;
         border-radius: 50%;
         width: 50px;
         height: 40px;
