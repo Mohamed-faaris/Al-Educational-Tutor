@@ -4,9 +4,9 @@
 
 ### Option 1: Use the Batch Script (Recommended)
 
-1. **Download all project files** to `c:\Faaris\projects\AI-llm\tutor\`
+1. **Download/clone the project files** to your desired directory
 2. **Get your Gemini API key** from [Google AI Studio](https://makersuite.google.com/app/apikey)
-3. **Update the .env file** with your API key (replace `your_gemini_api_key_here`)
+3. **Copy `.env.sample` to `.env`** and update with your API key
 4. **Double-click `run.bat`** - this will automatically:
    - Create a virtual environment
    - Install all dependencies
@@ -18,7 +18,7 @@ Follow these steps if you prefer manual setup:
 
 ```bash
 # 1. Navigate to the project directory
-cd c:\Faaris\projects\AI-llm\tutor
+cd ai-educational-tutor
 
 # 2. Create and activate virtual environment
 python -m venv venv
@@ -27,7 +27,8 @@ venv\Scripts\activate
 # 3. Install dependencies
 pip install -r requirements.txt
 
-# 4. Update .env file with your API key
+# 4. Copy and update .env file with your API key
+copy .env.sample .env
 # (Edit .env file and replace your_gemini_api_key_here with actual key)
 
 # 5. Run the application
@@ -70,13 +71,14 @@ All packages are listed in `requirements.txt`:
 ## Project Structure
 
 ```
-tutor/
+ai-educational-tutor/
 ├── app.py              # Main Streamlit application
 ├── config.py           # Configuration and subjects data
 ├── utils.py            # Utility functions
 ├── styles.py           # Custom CSS styling
 ├── requirements.txt    # Python dependencies
-├── .env               # Environment variables (API key)
+├── .env.sample         # Environment variables template
+├── .env               # Environment variables (API key) - created by user
 ├── run.bat            # Windows startup script
 ├── README.md          # Project documentation
 └── INSTALL.md         # This installation guide
@@ -244,7 +246,8 @@ If you want to modify or extend the application:
 
 ```bash
 # 1. Clone/download the project
-cd c:\Faaris\projects\AI-llm\tutor
+git clone <repository-url>
+cd ai-educational-tutor
 
 # 2. Create development environment
 python -m venv dev-env
