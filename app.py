@@ -395,24 +395,6 @@ def main():
     if st.session_state.uploaded_files:
         st.info(f"📚 **Reference Materials Active**: {len(st.session_state.uploaded_files)} file(s) uploaded - The AI will use these materials to enhance responses")
     
-    # Create a chat container with custom styling
-    st.markdown(
-        """
-        <div id="chat-container" style="
-            height: 500px; 
-            overflow-y: auto; 
-            padding: 20px; 
-            border: 1px solid #e0e0e0; 
-            border-radius: 15px; 
-            background: linear-gradient(to bottom, #e5ddd5 0%, #e5ddd5 100%);
-            margin-bottom: 20px;
-            background-image: url('data:image/svg+xml,<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 100 100\"><defs><pattern id=\"grain\" width=\"100\" height=\"100\" patternUnits=\"userSpaceOnUse\"><circle cx=\"50\" cy=\"50\" r=\"0.5\" fill=\"%23ffffff\" opacity=\"0.1\"/></pattern></defs><rect width=\"100\" height=\"100\" fill=\"url(%23grain)\"/></svg>');
-        ">
-        </div>
-        """, 
-        unsafe_allow_html=True
-    )
-    
     # Display chat history in WhatsApp-like format
     if st.session_state.chat_history:
         for i, exchange in enumerate(st.session_state.chat_history):
@@ -467,18 +449,8 @@ def main():
                     unsafe_allow_html=True
                 )
     else:
-        st.markdown(
-            """
-            <div style='text-align: center; margin: 100px 0; color: #666;'>
-                <div style='font-size: 3em; margin-bottom: 20px;'>👋</div>
-                <div style='font-size: 1.2em; margin-bottom: 10px;'>Welcome to AI Educational Tutor!</div>
-                <div>Start a conversation by asking a question below.</div>
-            </div>
-            """, 
-            unsafe_allow_html=True
-        )
-    
-    st.markdown("</div>", unsafe_allow_html=True)
+        # Empty state - no welcome message, just clean interface
+        pass
     
     # Question input section
     col_input, col_submit = st.columns([5, 1])
