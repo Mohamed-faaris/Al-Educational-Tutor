@@ -2,6 +2,8 @@
 
 A comprehensive Streamlit-based educational tutor application powered by Google's Gemini 2.0 Flash model. This application provides personalized tutoring across multiple subjects with conversation context management and interactive learning features.
 
+> **Built with VS Code & GitHub Copilot (Claude Sonnet 4 Preview)** - This project was developed using Visual Studio Code with GitHub Copilot powered by Claude Sonnet 4 (Preview) for enhanced code assistance and development productivity.
+
 ## ✨ Features
 
 - **Multi-Subject Support**: Python Programming, Basic Algebra, Calculus, Data Science, and Web Development
@@ -136,6 +138,12 @@ Build websites with HTML, CSS, JavaScript, and frameworks
 - **Quick Reference**: Web development basics
 
 ## 🔧 Technical Architecture
+
+### Development Environment
+
+- **IDE**: Visual Studio Code
+- **AI Assistant**: GitHub Copilot with Claude Sonnet 4 (Preview)
+- **Development Approach**: AI-assisted development for enhanced productivity and code quality
 
 ### Frontend (Streamlit)
 
