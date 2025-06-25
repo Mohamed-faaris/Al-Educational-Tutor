@@ -457,9 +457,17 @@ def main():
     # Question input section
     col_input, col_submit = st.columns([5, 1])
     
+    # Get the default value for the input (from selected example or empty)
+    default_question = ""
+    if "selected_example" in st.session_state:
+        default_question = st.session_state.selected_example
+        # Clear the selected example after using it
+        del st.session_state.selected_example
+    
     with col_input:
         question = st.text_input(
             "",
+            value=default_question,
             placeholder=f"Type your message about {selected_subject}...",
             key="question_input",
             label_visibility="collapsed"
@@ -478,9 +486,10 @@ def main():
     with st.expander("💡 Need inspiration? See example questions"):
         all_subjects = get_all_subjects()
         examples = all_subjects[selected_subject].get("example_questions", ["Ask any question!"])
-        for example in examples:
-            if st.button(f"📝 {example}", key=f"example_{hash(example)}", use_container_width=True):
-                st.session_state.question_input = example
+        for i, example in enumerate(examples):
+            if st.button(f"📝 {example}", key=f"example_{hash(example)}_{i}", use_container_width=True):
+                # Store the selected example in session state for the next run
+                st.session_state.selected_example = example
                 st.rerun()
     
     # Process question submission
