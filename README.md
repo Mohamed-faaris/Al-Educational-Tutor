@@ -1,12 +1,68 @@
 # 🎓 AI Educational Tutor
 
-A comprehensive Streamlit-based educational tutor application powered by Google's Gemini 2.0 Flash model. This application provides personalized tutoring across multiple subjects with conversation context management and interactive learning features.
+A comprehensive Streamlit-based educational tutor application powered - Subject-specific tips
+- Quick reference materials
+- Code examples and formulas
+
+## 🎯 Available Subjects
+
+### 1. Python Programming
+
+Learn Python syntax, data structures, OOP, and best practices
+
+- **Example Topics**: Functions, Classes, Error Handling, Libraries
+- **Quick Reference**: Basic Python syntax examples
+
+### 2. Basic Algebra
+
+Master fundamental algebraic concepts and problem-solving
+
+- **Example Topics**: Linear equations, Quadratic formula, Polynomials
+- **Quick Reference**: Important formulas and equations
+
+### 3. Calculus
+
+Understand derivatives, integrals, and calculus concepts
+
+- **Example Topics**: Limits, Derivatives, Integration, Chain Rule
+- **Quick Reference**: Key calculus formulas
+
+### 4. Data Science
+
+Learn data analysis, statistics, and machine learning basics
+
+- **Example Topics**: Machine Learning, Data Cleaning, Statistics
+- **Quick Reference**: Common data science concepts
+
+### 5. Web Development
+
+Build websites with HTML, CSS, JavaScript, and frameworks
+
+- **Example Topics**: HTML/CSS, JavaScript, React, Responsive Design
+- **Quick Reference**: Web development basics
+
+### 6. Database Management Systems (DBMS)
+
+Learn database concepts, SQL, and database design principles
+
+- **Example Topics**: SQL queries, Database design, Normalization, Relationships
+- **Quick Reference**: Essential SQL commands and database concepts
+
+### Custom Subjects
+
+Create your own subjects with personalized topics and context
+
+- **Flexible Topics**: Add any subject you want to study
+- **Custom Context**: Define specific focus areas and learning objectives
+- **Personalized Icon**: Choose any emoji to represent your subject
+
+## 🔧 Technical Architectureogle's Gemini 2.0 Flash model. This application provides personalized tutoring across multiple subjects with conversation context management and interactive learning features.
 
 > **Built with VS Code & GitHub Copilot (Claude Sonnet 4 Preview)** - This project was developed using Visual Studio Code with GitHub Copilot powered by Claude Sonnet 4 (Preview) for enhanced code assistance and development productivity.
 
 ## ✨ Features
 
-- **Multi-Subject Support**: Python Programming, Basic Algebra, Calculus, Data Science, and Web Development
+- **Multi-Subject Support**: 6 built-in subjects (Python Programming, Basic Algebra, Calculus, Data Science, Web Development, and DBMS) plus custom subject creation
 - **Interactive Chat Interface**: Chat-like conversation with context preservation using Gemini 2.0 Flash
 - **Subject-Specific Guidance**: Tailored responses based on selected subject
 - **Conversation History**: Maintains chat history with expandable conversation threads
@@ -78,9 +134,10 @@ A comprehensive Streamlit-based educational tutor application powered by Google'
 
 #### Subject Selection
 
-- Choose from 5 different subjects
+- Choose from 6 built-in subjects plus any custom subjects you create
 - Each subject has specialized context and guidance
 - Subject descriptions help you understand what's covered
+- Create custom subjects with your own topics, descriptions, and context
 
 #### Question Input
 
@@ -99,43 +156,6 @@ A comprehensive Streamlit-based educational tutor application powered by Google'
 - Subject-specific study tips
 - Quick reference materials
 - Code examples and formulas
-
-## 🎯 Available Subjects
-
-### 1. Python Programming
-
-Learn Python syntax, data structures, OOP, and best practices
-
-- **Example Topics**: Functions, Classes, Error Handling, Libraries
-- **Quick Reference**: Basic Python syntax examples
-
-### 2. Basic Algebra
-
-Master fundamental algebraic concepts and problem-solving
-
-- **Example Topics**: Linear equations, Quadratic formula, Polynomials
-- **Quick Reference**: Important formulas and equations
-
-### 3. Calculus
-
-Understand derivatives, integrals, and calculus concepts
-
-- **Example Topics**: Limits, Derivatives, Integration, Chain Rule
-- **Quick Reference**: Key calculus formulas
-
-### 4. Data Science
-
-Learn data analysis, statistics, and machine learning basics
-
-- **Example Topics**: Machine Learning, Data Cleaning, Statistics
-- **Quick Reference**: Common data science concepts
-
-### 5. Web Development
-
-Build websites with HTML, CSS, JavaScript, and frameworks
-
-- **Example Topics**: HTML/CSS, JavaScript, React, Responsive Design
-- **Quick Reference**: Web development basics
 
 ## 🔧 Technical Architecture
 
@@ -299,7 +319,8 @@ For support and questions:
 
 - Review this README thoroughly
 - Check the application's built-in error messages
-- Consult the Streamlit and Google AI documentation
+- Consult the [Streamlit documentation](https://docs.streamlit.io/) and [Google AI documentation](https://ai.google.dev/docs)
+- Or create an issue on the [GitHub repository](https://github.com/Mohamed-faaris/Al-Educational-Tutor/issues)
 
 ## 🖼 screenshots
 ![Screenshot 2025-06-25 at 18-41-52 AI Educational Tutor](https://github.com/user-attachments/assets/ec0ed609-7ed7-4b90-833b-d89fe1e72b24)
