@@ -282,3 +282,12 @@ For support and questions:
 - Review this README thoroughly
 - Check the application's built-in error messages
 - Consult the Streamlit and Google AI documentation
+
+## 🖼 screenshots
+![Screenshot 2025-06-25 at 18-41-52 AI Educational Tutor](https://github.com/user-attachments/assets/ec0ed609-7ed7-4b90-833b-d89fe1e72b24)
+
+![Screenshot 2025-06-25 at 18-43-55 AI Educational Tutor](https://github.com/user-attachments/assets/003f17d3-bc2c-47e7-b788-310a46c56706)
+
+![Screenshot 2025-06-25 at 18-41-04 AI Educational Tutor](https://github.com/user-attachments/assets/a706eb87-8fad-43b1-b722-e12d9c92d323)
+
+![Screenshot 2025-06-25 at 18-41-30 AI Educational Tutor](https://github.com/user-attachments/assets/22772166-4aed-4425-b4f4-c23ec4fe251f)
