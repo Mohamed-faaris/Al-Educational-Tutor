@@ -1,8 +1,36 @@
 # 🎓 AI Educational Tutor
 
-A comprehensive Streamlit-based educational tutor application powered - Subject-specific tips
-- Quick reference materials
-- Code examples and formulas
+**Summary:**
+
+A **Streamlit-based educational tutor app** powered by **Google’s Gemini 2.0 Flash model**, offering:
+
+* **Personalized tutoring** across multiple subjects.
+* **Context-aware conversations** for follow-up questions.
+* **Interactive learning**, using Gemini to generate answers based on:
+
+  * User queries.
+  * **Reference materials** provided in real time (e.g., textbooks, notes).
+* Built for **engagement, clarity, and adaptability** in education.
+
+
+> **Built with VS Code & GitHub Copilot (Claude Sonnet 4 Preview)** - This project was developed using Visual Studio Code with GitHub Copilot powered by Claude Sonnet 4 (Preview) for enhanced code assistance and development productivity.
+
+## 🌐 Live Demo
+
+**Try the live application:** [https://al-educational-tutor.streamlit.app/](https://al-educational-tutor.streamlit.app/)
+
+## ✨ Features
+
+- **Multi-Subject Support**: 6 built-in subjects (Python Programming, Basic Algebra, Calculus, Data Science, Web Development, and DBMS) plus custom subject creation
+- **Interactive Chat Interface**: Chat-like conversation with context preservation using Gemini 2.0 Flash
+- **Subject-Specific Guidance**: Tailored responses based on selected subject
+- **Conversation History**: Maintains chat history with expandable conversation threads
+- **File Upload Support**: Upload PDF and TXT files for context-aware learning
+- **Example Questions**: Built-in example questions for each subject
+- **Study Tips**: Subject-specific learning tips and quick references
+- **Error Handling**: Graceful handling of API errors, timeouts, and quota limits
+- **Responsive UI**: Clean, modern interface with sidebar controls
+- **Enhanced AI Model**: Powered by Google's latest Gemini 2.0 Flash experimental model
 
 ## 🎯 Available Subjects
 
@@ -56,21 +84,33 @@ Create your own subjects with personalized topics and context
 - **Custom Context**: Define specific focus areas and learning objectives
 - **Personalized Icon**: Choose any emoji to represent your subject
 
-## 🔧 Technical Architectureogle's Gemini 2.0 Flash model. This application provides personalized tutoring across multiple subjects with conversation context management and interactive learning features.
+## 🔧 Technical Architecture
 
-> **Built with VS Code & GitHub Copilot (Claude Sonnet 4 Preview)** - This project was developed using Visual Studio Code with GitHub Copilot powered by Claude Sonnet 4 (Preview) for enhanced code assistance and development productivity.
+### Development Environment
 
-## ✨ Features
+- **IDE**: Visual Studio Code
+- **AI Assistant**: GitHub Copilot with Claude Sonnet 4 (Preview)
+- **Development Approach**: AI-assisted development for enhanced productivity and code quality
 
-- **Multi-Subject Support**: 6 built-in subjects (Python Programming, Basic Algebra, Calculus, Data Science, Web Development, and DBMS) plus custom subject creation
-- **Interactive Chat Interface**: Chat-like conversation with context preservation using Gemini 2.0 Flash
-- **Subject-Specific Guidance**: Tailored responses based on selected subject
-- **Conversation History**: Maintains chat history with expandable conversation threads
-- **Example Questions**: Built-in example questions for each subject
-- **Study Tips**: Subject-specific learning tips and quick references
-- **Error Handling**: Graceful handling of API errors, timeouts, and quota limits
-- **Responsive UI**: Clean, modern interface with sidebar controls
-- **Enhanced AI Model**: Powered by Google's latest Gemini 2.0 Flash experimental model
+### Frontend (Streamlit)
+
+- **Layout**: Two-column layout with sidebar controls
+- **Components**: Dropdowns, text areas, buttons, expandable sections
+- **Styling**: Custom CSS for better user experience
+- **State Management**: Session state for conversation history
+
+### Backend Integration
+
+- **API**: Google Generative AI (Gemini 2.0 Flash experimental model)
+- **Prompt Engineering**: Structured prompts with subject context
+- **Context Management**: Last 5 Q&A pairs included for context
+- **Error Handling**: Comprehensive error handling for various failure scenarios
+
+### Memory Management
+
+- **Session State**: Streamlit session state for persistence
+- **Context Limitation**: Token limit management for long conversations
+- **History Storage**: In-memory storage with conversation threading
 
 ## 🚀 Getting Started
 
@@ -154,6 +194,8 @@ For Windows users, the easiest way to get started:
 5. **Access the application**
    - Open your browser and go to `http://localhost:8501`
 
+
+
 ## 📋 Usage Guide
 
 ### Getting Started
@@ -190,18 +232,7 @@ For Windows users, the easiest way to get started:
 - Quick reference materials
 - Code examples and formulas
 
-## 🔧 Technical Architecture
-
-### Development Environment
-
-- **IDE**: Visual Studio Code
-- **AI Assistant**: GitHub Copilot with Claude Sonnet 4 (Preview)
-- **Development Approach**: AI-assisted development for enhanced productivity and code quality
-
-### Frontend (Streamlit)
-
-- **Layout**: Two-column layout with sidebar controls
-- **Components**: Dropdowns, text areas, buttons, expandable sections
+## �️ Prompt Engineering
 - **Styling**: Custom CSS for better user experience
 - **State Management**: Session state for conversation history
 
